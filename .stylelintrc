@@ -1,4 +1,19 @@
 {
- "extends": ["stylelint-config-recommended-scss"],
- "rules": {}
+    "plugins": [
+        "stylelint-selector-bem-pattern"
+    ],
+    "extends": ["stylelint-config-recommended-scss"],
+    "rules": {
+        "selector-class-pattern": null,
+        "color-named": "never",
+        "function-disallowed-list": ["rgb"],
+        "plugin/selector-bem-pattern": {
+            "preset": "bem"  
+        },
+        "declaration-empty-line-before": null,
+        "no-descending-specificity": true,
+        "no-duplicate-selectors": true,
+        "block-no-empty": true
+    },
+    "implicitComponents": true
 }

@@ -1,14 +1,16 @@
 * {
   box-sizing: border-box;  
-  font-family: $main-font;
 }
 
 body {
   font-size: 15px;
-  color: rgb(71, 71, 71);
+  font-family: $main-font;
+  color: #595959;
   margin: 0px;
   font-weight: 100;
 }
+
+/** @define header */
 
 .header{
   background-image: url('../images/fondo.png');
@@ -26,55 +28,71 @@ body {
 
   &__title{
     color: $contrast-color;
+    font-family: $other-font;
   
     @media (min-width: $mqMinWidth) {
         font-size: 2rem;
     }
   }
   margin-bottom: 4rem;
-  box-shadow: 0 6px 10px -6px $main-color;// rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 10px -6px $main-color;
 }
+
+/** @define nav */
 
 .nav{
   &__list{
-      list-style: none;
-      &__item{
-          display: inline;
-          & a{
-          color: $contrast-color;
-          text-decoration: none;
-          padding: 5px;
-          cursor: pointer;
-          }
-      }
+    list-style: none; 
   }
+  &__item{
+    display: inline;
+  }
+  &__link{
+    color: $contrast-color;
+    text-decoration: none;
+    padding: 5px;
+    cursor: pointer;
+    
+    &--active{
+      text-decoration: solid;
+    }
+  } 
 }
 
+/** @define container */
+
 .container {
-  max-width: 80%;
+  max-width: 75%;
   margin: 0 auto;
 }
 
-h2{
-  font-size: 35px;
-  color: $main-color;
+/** @define titles */
+.titles{
   font-family: $other-font;
+  &--t2{
+    font-size: 35px;
+    color: $main-color;
+  }
+  &--t3{
+    font-size: 30px;
+    color: $sub-color;
+  }
 }
 
-h3{
-  font-size: 30px;
-  color: $sub-color;
-  font-family: $other-font
-}
-
-blockquote{
-  border-left: 3px solid $secondary-color;
+/** @define cita */
+.cita{
+  border-left: 3px solid $main-color;
+  margin-top: 2em;
   padding-left: 1em;
   margin-left: 20%;
   text-align: right;
-  font-family: 'Fuggles', cursive;
-  font-size: 2rem;
+  font-size: 14px;
+  font-style: italic;
+  color: #000000d2;
+  font-weight: 300;
 }
+
+/** @define type */
 
 .type{
   list-style: none;
@@ -82,12 +100,15 @@ blockquote{
   text-align: justify;
   &__item{
     line-height: 2;
-    & b{
-      text-transform: uppercase;
-      font-weight: 600;
-    }
+  }
+  &__term{
+    text-transform: uppercase;
+    font-weight: 600;
   }
 }
+
+/** @define dl */
+
 .dl{
   display: inline-block;
   
@@ -98,20 +119,18 @@ blockquote{
     clear: left;
     margin: 0.7rem;
     padding: 0.5rem;
-    
-    &__span{
-      color: $main-color;
-      font-size: 18px;
-      text-transform: uppercase;
-      font-weight: 600;
-    }
-    
-    &__img{
-      width: 100%;
-      padding-top: 10px;
-      border-radius: 5px;
-    }
-   
+  }
+  &__dt-span{
+    color: $main-color;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  
+  &__dt-img{
+    width: 100%;
+    padding-top: 10px;
+    border-radius: 5px;
   }
 
   &__dd{
@@ -123,12 +142,13 @@ blockquote{
 }
 
 
-//CARDS
+/** @define card */
+
 .card{
   width: 100%;
   max-width: $mqMinWidth;
   margin: 2em auto;
-  box-shadow: 0 6px 10px -5px $main-color;// rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 10px -5px $main-color;
   border-radius: 5px;
 
   &__img{
@@ -160,6 +180,8 @@ blockquote{
   }
 }
 
+/** @define biblio */
+
 .biblio{
   list-style: none;
   padding: 0;
@@ -169,15 +191,15 @@ blockquote{
     border-radius: 5px;
     display: inline-flex;
     margin: 5px 0;
-
-    & a{
-      text-decoration: none;
-      color: black;
-      padding: 10px;
-    }
+  }
+  &__link{
+    text-decoration: none;
+    color: #000000;
+    padding: 10px;
   }
 }
 
+/** @define footer */
 
 .footer{
   margin-top: 4rem;

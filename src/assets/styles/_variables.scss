@@ -1,16 +1,13 @@
 @use "sass:color";
 
-//color.scale($uoc-masterbrand, $lightness: 70%);
-$main-bg:#ffffff;
-
 $main-font:  'Montserrat', sans-serif;
 $other-font: 'Zeyada', cursive;
 
 $bg: #3073a0cb;
 $main-color: #315290;
 $sub-color: #8b7660;
-$secondary-color: rgb(213, 213, 213);
-$contrast-color: white;
+$secondary-color: #d5d5d5cb;
+$contrast-color: #ffffff;
 
 
 $mqMinWidth: 620px;
