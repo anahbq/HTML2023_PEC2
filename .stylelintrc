@@ -8,12 +8,14 @@
         "color-named": "never",
         "function-disallowed-list": ["rgb"],
         "plugin/selector-bem-pattern": {
-            "preset": "bem"  
+            "preset": "bem",
+            "componentName": "[a-z]+"
         },
         "declaration-empty-line-before": null,
         "no-descending-specificity": true,
         "no-duplicate-selectors": true,
-        "block-no-empty": true
+        "block-no-empty": true,
+        "selector-pseudo-class-allowed-list": ["hover", "before", "has", "is"]
     },
     "implicitComponents": true
 }

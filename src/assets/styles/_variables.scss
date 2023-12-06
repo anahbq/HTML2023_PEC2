@@ -1,13 +1,31 @@
 @use "sass:color";
 
-$main-font:  'Montserrat', sans-serif;
-$other-font: 'Zeyada', cursive;
+@import url('https://fonts.googleapis.com/css2?family=Fuggles&family=Montserrat:ital,wght@0,300;0,400;1,100;1,500;1,600;1,700&family=Roboto:wght@100&family=Zeyada&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&display=swap');
 
-$bg: #3073a0cb;
-$main-color: #315290;
-$sub-color: #8b7660;
-$secondary-color: #d5d5d5cb;
-$contrast-color: #ffffff;
+$main-font:  'Montserrat', sans-serif;
+$other-font: 'Chakra Petch', sans-serif;
+
 
 
 $mqMinWidth: 620px;
+$main-color: #5b7208;
+$bg-content: #5b7208c0;
+$contrast-color: #ffffff;
+
+$firstColor: #35aae5;
+$secondColor: #b83e3c;
+$black: #383838;
+$border-color: #DFDFDF;
+$bg-secondary-color: #F0F0F0;
+
+/*Bootstrap*/
+$primary: #5b7208 !default;
+$border-radius: 10px !default;
+$border-width: 2px !default;
+$blockquote-footer-color: $main-color !default;
+$headings-font-family:        $other-font !default;
+$headings-color:              $firstColor !default;
+
+$newColor: hwb(141 13% 58% / 0.22);
